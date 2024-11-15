@@ -661,6 +661,7 @@ function App() {
         )
         }
       */}
+
       {/* MERN Folder Structure
       client(Front End Folder)
         |
@@ -703,7 +704,7 @@ function App() {
             |-models
             |-utils
             |-index.js(here we make our server listen and perform a Database connection, also we define the root route to route : const route = require("./routes") app.use('/', route))
-            |-routes.js(here we define which routes should have which controller, similar to web.php in laravel)
+            |-routes.js(here we define which routes should have which controller, similar to web.php in Laravel)
           |-
           |-.gitignore
           |-.env
@@ -742,7 +743,7 @@ function App() {
           install a package: npm i react-table
           use mockeroo.com to generate mock data
           Basic Table
-          A basic tab;e can be implemented in 6 simple steps
+          A basic table can be implemented in 6 simple steps
           1.) Get the Data(the one you want to display in the table)
           2.) Define the Columns for your table
           3.) Use the Data and the Defined Columns to create a table instance using react-table
@@ -883,7 +884,9 @@ function App() {
             headerGroups, //goes to the thead tag as content
             footerGroups, //
             rows, //goes to the tbody tag as attribute
-            prepareRow //goes to the tbody tag as attribute } = tableInstance
+            prepareRow //goes to the tbody tag as attribute 
+            } = tableInstance
+            
             return(
             <div>
             // STEP 4 :-
@@ -936,7 +939,7 @@ function App() {
                 footerGroup.headers.map(column => (
                   <td {...column.getFooterProps}>
                   {
-                  colunm.render('Footer')
+                  column.render('Footer')
                   }
                   </td>
                   ))
